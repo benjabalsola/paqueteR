@@ -53,32 +53,20 @@ Si <code>ruta_archivo</code> ya existe, <strong>no</strong> vuelve a descargar: 
 
 <dl><dt id="arg-id-estacion">id_estacion<a class="anchor" aria-label="anchor" href="#arg-id-estacion"></a></dt>
 <dd><p>Cadena con el ID a leer. Valores validos:
-<code>"metadatos"</code>, <code>"NH0472"</code>, <code>"NH0910"</code>, <code>"NH0046"</code>, <code>"NH0098"</code>, <code>"NH0437"</code>.</p></dd>
+"metadatos", "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".</p></dd>
 
 
 <dt id="arg-ruta-archivo">ruta_archivo<a class="anchor" aria-label="anchor" href="#arg-ruta-archivo"></a></dt>
-<dd><p>Ruta local <strong>.csv</strong> donde guardar/leer el archivo
-(por ejemplo, <code>"data-raw/NH0437.csv"</code>). Si la carpeta no existe,
+<dd><p>Ruta local .csv donde guardar/leer el archivo
+(por ejemplo, "data-raw/NH0437.csv"). Si la carpeta no existe,
 se crea automaticamente.</p></dd>
 
 </dl></div>
     <div class="section level2">
     <h2 id="value">Value<a class="anchor" aria-label="anchor" href="#value"></a></h2>
-    <p>Un <code>tibble</code> leido con <code><a href="https://readr.tidyverse.org/reference/read_delim.html" class="external-link">readr::read_csv()</a></code>.</p>
+    <p>Un <code>tibble</code> (data frame) con columnas id, fecha, temperatura_abrigo_150cm.</p>
     </div>
 
-    <div class="section level2">
-    <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw">if</span> <span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="op">{</span> <span class="co"># \dontrun{</span></span></span>
-<span class="r-in"><span><span class="co"># Descarga y lee la estacion NH0437 (la guarda en data-raw/NH0437.csv)</span></span></span>
-<span class="r-in"><span><span class="va">df</span> <span class="op">&lt;-</span> <span class="fu">leer_datos_estacion</span><span class="op">(</span><span class="st">"NH0437"</span>, <span class="st">"data-raw/NH0437.csv"</span><span class="op">)</span></span></span>
-<span class="r-in"><span></span></span>
-<span class="r-in"><span><span class="co"># Lee metadatos (se guarda en data-raw/metadatos.csv)</span></span></span>
-<span class="r-in"><span><span class="va">md</span> <span class="op">&lt;-</span> <span class="fu">leer_datos_estacion</span><span class="op">(</span><span class="st">"metadatos"</span>, <span class="st">"data-raw/metadatos.csv"</span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="op">}</span> <span class="co"># }</span></span></span>
-<span class="r-in"><span></span></span>
-</code></pre></div>
-    </div>
   </main><aside class="col-md-3"><nav id="toc" aria-label="Table of contents"><h2>On this page</h2>
     </nav></aside></div>
 

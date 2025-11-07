@@ -8,8 +8,7 @@ tabla_resumen_temperatura(...)
 }
 \arguments{
 \item{...}{Uno o mas data frames que contengan al menos las columnas
-\code{id} y \code{temperatura_abrigo_150cm}.
-Cada data frame representa una estacion.}
+\code{id} y \code{temperatura_abrigo_150cm}. Cada data frame representa una estacion.}
 }
 \value{
 Un \code{tibble} con una fila por estacion y las columnas:
@@ -30,9 +29,9 @@ informativo al finalizar.
 }
 \examples{
 \dontrun{
-# Supongamos que tenemos data frames para varias estaciones:
-resumen <- tabla_resumen_temperatura(df_NH0437, df_NH0098, df_NH0472)
-print(resumen)
+df1 <- data.frame(id=c("A","A","B"), temperatura_abrigo_150cm=c(21.5,22.1,19.8))
+df2 <- data.frame(id=c("C","C"),     temperatura_abrigo_150cm=c(23.0,24.1))
+tabla_resumen_temperatura(df1, df2)
 }
 
 }
