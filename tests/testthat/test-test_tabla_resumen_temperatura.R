@@ -21,7 +21,7 @@ test_that("tabla_resumen_temperatura falla si faltan columnas requeridas", {
 test_that("tabla_resumen_temperatura falla sin argumentos", {
   expect_error(
     tabla_resumen_temperatura(),
-    regexp = "Debes pasar uno o más data frames"
+    regexp = "Debes pasar uno o mas data frames"
   )
 })
 
@@ -33,7 +33,7 @@ test_that("tabla_resumen_temperatura falla si la temperatura no es numérica", {
   )
   expect_error(
     tabla_resumen_temperatura(df_malo),
-    regexp = "debe ser numérica"
+    regexp = "debe ser numerica"
   )
 })
 

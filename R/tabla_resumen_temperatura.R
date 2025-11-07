@@ -31,12 +31,12 @@
 tabla_resumen_temperatura <- function(...) {
   args <- list(...)
 
-  # Validación: debe haber al menos un data frame
+  # Validacion: debe haber al menos un data frame
   if (length(args) == 0) {
-    cli::cli_abort("Debes pasar uno o más data frames para generar el resumen.")
+    cli::cli_abort("Debes pasar uno o mas data frames para generar el resumen.")
   }
 
-  # Verificación: todos deben ser data frames
+  # Verificacion: todos deben ser data frames
   if (!all(vapply(args, is.data.frame, logical(1)))) {
     cli::cli_abort("Todos los argumentos deben ser data frames. Verifica los objetos pasados a la funcion.")
   }
@@ -51,9 +51,9 @@ tabla_resumen_temperatura <- function(...) {
     cli::cli_abort("Faltan columnas en los data frames: {paste(faltan, collapse = ', ')}.")
   }
 
-  # Validación: la columna de temperatura debe ser numérica
+  # Validacion: la columna de temperatura debe ser numerica
   if (!is.numeric(datos_combinados$temperatura_abrigo_150cm)) {
-    cli::cli_abort("La columna 'temperatura_abrigo_150cm' debe ser numérica.")
+    cli::cli_abort("La columna 'temperatura_abrigo_150cm' debe ser numerica.")
   }
 
   # Calcular resumen por estacion
@@ -63,13 +63,13 @@ tabla_resumen_temperatura <- function(...) {
       media           = mean(temperatura_abrigo_150cm, na.rm = TRUE),
       minimo          = min(temperatura_abrigo_150cm, na.rm = TRUE),
       maximo          = max(temperatura_abrigo_150cm, na.rm = TRUE),
-      desviacion      = sd(temperatura_abrigo_150cm,  na.rm = TRUE),
+      desviacion      = stats::sd(temperatura_abrigo_150cm,  na.rm = TRUE),
       n_observaciones = sum(!is.na(temperatura_abrigo_150cm)),
       .groups = "drop"
     )
 
   # Mensaje informativo
-  cli::cli_inform("Resumen generado correctamente para {nrow(resumenes)} estación(es).")
+  cli::cli_inform("Resumen generado correctamente para {nrow(resumenes)} estacion(es).")
 
   return(resumenes)
 }
