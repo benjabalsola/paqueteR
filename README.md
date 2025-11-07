@@ -49,5 +49,5 @@ Este paquete fue desarrollado por:
 - **Benjamin Balsola** (autor principal)  
 - **Ramiro Coletto** (coautor)
 
-Como parte del trabajo practico final de la materia **Programacion II**,  
+Como parte del segundo parcial de la materia **Programacion II**,  
 **Licenciatura en Ciencia de Datos – Universidad Austral (2025)**.
