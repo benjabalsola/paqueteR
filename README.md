@@ -41,3 +41,13 @@ tabla_resumen_temperatura(NH0437)
 # Graficar temperatura promedio mensual
 
 grafico_temperatura_mensual(NH0437, titulo = “Promedio mensual NH0437”)
+
+## Autores
+
+Este paquete fue desarrollado por:
+
+- **Benjamin Balsola** (autor principal)  
+- **Ramiro Coletto** (coautor)
+
+Como parte del trabajo practico final de la materia **Programacion II**,  
+**Licenciatura en Ciencia de Datos – Universidad Austral (2025)**.
