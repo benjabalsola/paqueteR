@@ -22,6 +22,10 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Suggests: 
+    covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    testthat,
+    withr
 VignetteBuilder: knitr
+Config/testthat/edition: 3

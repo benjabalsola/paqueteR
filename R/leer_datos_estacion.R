@@ -2,15 +2,15 @@
 #'
 #' Descarga (si no existe) y lee el CSV correspondiente a una estacion
 #' meteorologica de la lista disponible, o el archivo de metadatos.
-#' Si `ruta_archivo` ya existe, no vuelve a descargar: lo lee directo.
+#' Si `ruta_archivo` ya existe, **no** vuelve a descargar: lo lee directo.
 #'
 #' @param id_estacion Cadena con el ID a leer. Valores validos:
-#'   "metadatos", "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".
-#' @param ruta_archivo Ruta local .csv donde guardar/leer el archivo
-#'   (por ejemplo, "data-raw/NH0437.csv"). Si la carpeta no existe,
+#'   `"metadatos"`, `"NH0472"`, `"NH0910"`, `"NH0046"`, `"NH0098"`, `"NH0437"`.
+#' @param ruta_archivo Ruta local **.csv** donde guardar/leer el archivo
+#'   (por ejemplo, `"data-raw/NH0437.csv"`). Si la carpeta no existe,
 #'   se crea automaticamente.
 #'
-#' @return Un tibble leido con readr::read_csv().
+#' @return Un `tibble` leido con `readr::read_csv()`.
 #'
 #' @examples
 #' \dontrun{

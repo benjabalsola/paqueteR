@@ -1,9 +1,9 @@
 #' Grafico mensual de temperatura por estacion
 #'
-#' Agrega los datos por mes (1-12) a partir de la columna `fecha` y grafica
+#' Agrega los datos por mes (1–12) a partir de la columna `fecha` y grafica
 #' la temperatura promedio mensual por `id` (estacion). Si se pasa un vector
-#' de `colores`, se usa; si no, se generan colores automaticamente. Nota:
-#' el calculo mensual agrega todas las observaciones de todos los anos juntos.
+#' de `colores`, se usa; si no, se generan colores automaticamente. **Nota**:
+#' el calculo mensual agrega todas las observaciones de todos los anios juntos.
 #'
 #' @param datos Un data frame con al menos las columnas:
 #'   `id` (estacion), `fecha` (Date o convertible) y

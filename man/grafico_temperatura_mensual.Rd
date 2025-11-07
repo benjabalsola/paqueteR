@@ -20,10 +20,10 @@ es menor que la cantidad de estaciones, se recicla.}
 Un objeto \code{ggplot2::ggplot}.
 }
 \description{
-Agrega los datos por mes (1-12) a partir de la columna \code{fecha} y grafica
+Agrega los datos por mes (1–12) a partir de la columna \code{fecha} y grafica
 la temperatura promedio mensual por \code{id} (estacion). Si se pasa un vector
-de \code{colores}, se usa; si no, se generan colores automaticamente. Nota:
-el calculo mensual agrega todas las observaciones de todos los anos juntos.
+de \code{colores}, se usa; si no, se generan colores automaticamente. \strong{Nota}:
+el calculo mensual agrega todas las observaciones de todos los anios juntos.
 }
 \examples{
 \dontrun{

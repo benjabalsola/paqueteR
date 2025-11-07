@@ -8,19 +8,19 @@ leer_datos_estacion(id_estacion, ruta_archivo)
 }
 \arguments{
 \item{id_estacion}{Cadena con el ID a leer. Valores validos:
-"metadatos", "NH0472", "NH0910", "NH0046", "NH0098", "NH0437".}
+\code{"metadatos"}, \code{"NH0472"}, \code{"NH0910"}, \code{"NH0046"}, \code{"NH0098"}, \code{"NH0437"}.}
 
-\item{ruta_archivo}{Ruta local .csv donde guardar/leer el archivo
-(por ejemplo, "data-raw/NH0437.csv"). Si la carpeta no existe,
+\item{ruta_archivo}{Ruta local \strong{.csv} donde guardar/leer el archivo
+(por ejemplo, \code{"data-raw/NH0437.csv"}). Si la carpeta no existe,
 se crea automaticamente.}
 }
 \value{
-Un tibble leido con readr::read_csv().
+Un \code{tibble} leido con \code{readr::read_csv()}.
 }
 \description{
 Descarga (si no existe) y lee el CSV correspondiente a una estacion
 meteorologica de la lista disponible, o el archivo de metadatos.
-Si \code{ruta_archivo} ya existe, no vuelve a descargar: lo lee directo.
+Si \code{ruta_archivo} ya existe, \strong{no} vuelve a descargar: lo lee directo.
 }
 \examples{
 \dontrun{
