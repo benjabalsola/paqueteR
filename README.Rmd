@@ -5,6 +5,12 @@ editor_options:
     wrap: 72
 ---
 
+```{r, include=FALSE}
+# Esto evita que se ejecuten los bloques de código
+knitr::opts_chunk$set(eval = FALSE)
+```
+
+
 <!-- README generado con usethis::use_readme_rmd() -->
 
 <!-- Badges opcionales; cambia usuario/repo si queres -->
@@ -12,31 +18,47 @@ editor_options:
 [![R-CMD-check](https://github.com/benjabalsola/paqueteR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/benjabalsola/paqueteR/actions)
 -->
 
-# paqueteR
+# paqueteR <img src="man/figures/logo.png" align="right" width="120"/>
 
-Análisis y gráficos de datos meteorológicos de estaciones.
+**paqueteR** es un paquete desarrollado para el análisis y visualización
+de datos meteorológicos de distintas estaciones.
 
+Incluye funciones para:
 - Leer datos de una estación (`leer_datos_estacion`)
-- Resumen tabular (`tabla_resumen_temperatura`)
-- Gráfico mensual (`grafico_temperatura_mensual`)
+- Crear una tabla resumen (`tabla_resumen_temperatura`)
+- Generar un gráfico mensual (`grafico_temperatura_mensual`)
 - Dataset de ejemplo: `NH0437`
+
+---
 
 ## Instalación
 
-```r
+```{r, eval=FALSE}
 # install.packages("remotes")
 remotes::install_github("benjabalsola/paqueteR")
+```
 
-## Ejemplo de uso
+## 💡 Ejemplo de uso
 
+A continuación se muestra un ejemplo de flujo de trabajo con el paquete:
+
+```r
 library(paqueteR)
 
+## Cargar el dataset de ejemplo incluido en el paquete
 data("NH0437")
+
+## Ver las primeras filas
 head(NH0437)
 
+## Calcular un resumen de temperatura
 tabla_resumen_temperatura(NH0437)
 
-grafico_temperatura_mensual(NH0437, titulo = "Promedio mensual NH0437")
+## Graficar la temperatura promedio mensual
+grafico_temperatura_mensual(
+  NH0437,
+  titulo = "Promedio mensual NH0437"
+)
 
 ## **Autores**
 
