@@ -1,45 +1,48 @@
-# paqueteR
+# paqueteR ![](reference/figures/logo.png)
 
-Análisis y gráficos de datos meteorológicos de estaciones.
+**paqueteR** es un paquete desarrollado para el análisis y visualización
+de datos meteorológicos de distintas estaciones.
 
-El paquete incluye funciones para: - descargar datos de estaciones (con
-caché local), - crear una tabla resumen de temperatura por estación, -
-graficar temperatura promedio mensual por estación.
+Incluye funciones para: - Leer datos de una estación
+(`leer_datos_estacion`) - Crear una tabla resumen
+(`tabla_resumen_temperatura`) - Generar un gráfico mensual
+(`grafico_temperatura_mensual`) - Dataset de ejemplo: `NH0437`
+
+------------------------------------------------------------------------
 
 ## Instalación
 
-Instalar desde GitHub:
+``` r
+# install.packages("remotes")
+remotes::install_github("benjabalsola/paqueteR")
+```
 
-\`\`\`r \# install.packages(“remotes”)
-remotes::install_github(“benjabalsola/paqueteR”)
+## 💡 Ejemplo de uso
 
-## Ejemplo de uso
+A continuación se muestra un ejemplo de flujo de trabajo con el paquete:
 
-library(paqueteR)
+\`\`\`r library(paqueteR)
 
-# Cargar el dataset de ejemplo incluido en el paquete
+## Cargar el dataset de ejemplo incluido en el paquete
 
 data(“NH0437”)
 
-# Ver las primeras filas
+## Ver las primeras filas
 
 head(NH0437)
 
-# Calcular resumen
+## Calcular un resumen de temperatura
 
 tabla_resumen_temperatura(NH0437)
 
-# Graficar temperatura promedio mensual
+## Graficar la temperatura promedio mensual
 
-grafico_temperatura_mensual(NH0437, titulo = “Promedio mensual NH0437”)
+grafico_temperatura_mensual( NH0437, titulo = “Promedio mensual NH0437”
+)
 
-Autores
+## **Autores**
 
-Este paquete fue desarrollado por:
+**Benjamín Balsola** (autor principal)  
+**Ramiro Coletto** (coautor)
 
-Benjamín Balsola (autor principal)
-
-Ramiro Coletto (coautor)
-
-Como parte del segundo parcial de la materia Programación II,
-Licenciatura en Ciencia de Datos – Universidad Austral (2025).
+**Universidad Austral – Programación II (2025)**

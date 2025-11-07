@@ -45,48 +45,52 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="paqueter">paqueteR<a class="anchor" aria-label="anchor" href="#paqueter"></a>
+<div class="page-header"><h1 id="paqueter-">paqueteR <img src="reference/figures/logo.png" align="right" width="120"><a class="anchor" aria-label="anchor" href="#paqueter-"></a>
 </h1></div>
-<p>Análisis y gráficos de datos meteorológicos de estaciones.</p>
-<p>El paquete incluye funciones para: - descargar datos de estaciones (con caché local), - crear una tabla resumen de temperatura por estación, - graficar temperatura promedio mensual por estación.</p>
+<p><strong>paqueteR</strong> es un paquete desarrollado para el análisis y visualización de datos meteorológicos de distintas estaciones.</p>
+<p>Incluye funciones para: - Leer datos de una estación (<code>leer_datos_estacion</code>) - Crear una tabla resumen (<code>tabla_resumen_temperatura</code>) - Generar un gráfico mensual (<code>grafico_temperatura_mensual</code>) - Dataset de ejemplo: <code>NH0437</code></p>
+<hr>
 <div class="section level2">
 <h2 id="instalación">Instalación<a class="anchor" aria-label="anchor" href="#instalaci%C3%B3n"></a>
 </h2>
-<p>Instalar desde GitHub:</p>
-<p>```r # install.packages(“remotes”) remotes::install_github(“benjabalsola/paqueteR”)</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"benjabalsola/paqueteR"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="ejemplo-de-uso">Ejemplo de uso<a class="anchor" aria-label="anchor" href="#ejemplo-de-uso"></a>
+<h2 id="bulb-ejemplo-de-uso">💡 Ejemplo de uso<a class="anchor" aria-label="anchor" href="#bulb-ejemplo-de-uso"></a>
 </h2>
-<p>library(paqueteR)</p>
+<p>A continuación se muestra un ejemplo de flujo de trabajo con el paquete:</p>
+<p>```r library(paqueteR)</p>
 </div>
-</div>
-<div class="section level1">
-<h1 id="cargar-el-dataset-de-ejemplo-incluido-en-el-paquete">Cargar el dataset de ejemplo incluido en el paquete<a class="anchor" aria-label="anchor" href="#cargar-el-dataset-de-ejemplo-incluido-en-el-paquete"></a>
-</h1>
+<div class="section level2">
+<h2 id="cargar-el-dataset-de-ejemplo-incluido-en-el-paquete">Cargar el dataset de ejemplo incluido en el paquete<a class="anchor" aria-label="anchor" href="#cargar-el-dataset-de-ejemplo-incluido-en-el-paquete"></a>
+</h2>
 <p>data(“NH0437”)</p>
 </div>
-<div class="section level1">
-<h1 id="ver-las-primeras-filas">Ver las primeras filas<a class="anchor" aria-label="anchor" href="#ver-las-primeras-filas"></a>
-</h1>
+<div class="section level2">
+<h2 id="ver-las-primeras-filas">Ver las primeras filas<a class="anchor" aria-label="anchor" href="#ver-las-primeras-filas"></a>
+</h2>
 <p>head(NH0437)</p>
 </div>
-<div class="section level1">
-<h1 id="calcular-resumen">Calcular resumen<a class="anchor" aria-label="anchor" href="#calcular-resumen"></a>
-</h1>
+<div class="section level2">
+<h2 id="calcular-un-resumen-de-temperatura">Calcular un resumen de temperatura<a class="anchor" aria-label="anchor" href="#calcular-un-resumen-de-temperatura"></a>
+</h2>
 <p>tabla_resumen_temperatura(NH0437)</p>
 </div>
-<div class="section level1">
-<h1 id="graficar-temperatura-promedio-mensual">Graficar temperatura promedio mensual<a class="anchor" aria-label="anchor" href="#graficar-temperatura-promedio-mensual"></a>
-</h1>
-<p>grafico_temperatura_mensual(NH0437, titulo = “Promedio mensual NH0437”)</p>
-<p>Autores</p>
-<p>Este paquete fue desarrollado por:</p>
-<p>Benjamín Balsola (autor principal)</p>
-<p>Ramiro Coletto (coautor)</p>
-<p>Como parte del segundo parcial de la materia Programación II, Licenciatura en Ciencia de Datos – Universidad Austral (2025).</p>
+<div class="section level2">
+<h2 id="graficar-la-temperatura-promedio-mensual">Graficar la temperatura promedio mensual<a class="anchor" aria-label="anchor" href="#graficar-la-temperatura-promedio-mensual"></a>
+</h2>
+<p>grafico_temperatura_mensual( NH0437, titulo = “Promedio mensual NH0437” )</p>
 </div>
-
+<div class="section level2">
+<h2 id="autores">
+<strong>Autores</strong><a class="anchor" aria-label="anchor" href="#autores"></a>
+</h2>
+<p><strong>Benjamín Balsola</strong> (autor principal)<br><strong>Ramiro Coletto</strong> (coautor)</p>
+<p><strong>Universidad Austral – Programación II (2025)</strong></p>
+</div>
+</div>
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
