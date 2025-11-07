@@ -1,0 +1,9 @@
+pandoc: 3.6.3
+pkgdown: 2.2.0
+pkgdown_sha: ~
+articles:
+  uso_paquete: uso_paquete.html
+last_built: 2025-11-07T14:26Z
+urls:
+  reference: https://benjabalsola.github.io/paqueteR/reference
+  article: https://benjabalsola.github.io/paqueteR/articles
