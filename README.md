@@ -4,27 +4,27 @@
 <!-- Badges opcionales; cambia usuario/repo si queres -->
 
 <!--
-[![R-CMD-check](https://github.com/benjabalsola/paqueteTemperatura/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/benjabalsola/paqueteTemperatura/actions)
+[![R-CMD-check](https://github.com/benjabalsola/paqueteR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/benjabalsola/paqueteR/actions)
 -->
 
-# paqueteTemperatura
+# paqueteR
 
-Analisis y graficos de datos meteorologicos de estaciones.
+Análisis y gráficos de datos meteorológicos de estaciones.
 
 El paquete incluye funciones para: - descargar datos de estaciones (con
-cache local), - crear una tabla resumen de temperatura por estacion, -
-graficar temperatura promedio mensual por estacion.
+caché local), - crear una tabla resumen de temperatura por estación, -
+graficar temperatura promedio mensual por estación.
 
-## Instalacion
+## Instalación
 
 Instalar desde GitHub:
 
 \`\`\`r \# install.packages(“remotes”)
-remotes::install_github(“benjabalsola/paqueteTemperatura”)
+remotes::install_github(“benjabalsola/paqueteR”)
 
 ## Ejemplo de uso
 
-\`\`\`r library(paqueteTemperatura)
+library(paqueteR)
 
 # Cargar el dataset de ejemplo incluido en el paquete
 
@@ -41,3 +41,14 @@ tabla_resumen_temperatura(NH0437)
 # Graficar temperatura promedio mensual
 
 grafico_temperatura_mensual(NH0437, titulo = “Promedio mensual NH0437”)
+
+Autores
+
+Este paquete fue desarrollado por:
+
+Benjamín Balsola (autor principal)
+
+Ramiro Coletto (coautor)
+
+Como parte del segundo parcial de la materia Programación II,
+Licenciatura en Ciencia de Datos – Universidad Austral (2025).
