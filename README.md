@@ -11,13 +11,12 @@
 
 Análisis y gráficos de datos meteorológicos de estaciones.
 
-El paquete incluye funciones para: - descargar datos de estaciones (con
-caché local), - crear una tabla resumen de temperatura por estación, -
-graficar temperatura promedio mensual por estación.
+- Leer datos de una estación (`leer_datos_estacion`)
+- Resumen tabular (`tabla_resumen_temperatura`)
+- Gráfico mensual (`grafico_temperatura_mensual`)
+- Dataset de ejemplo: `NH0437`
 
 ## Instalación
-
-Instalar desde GitHub:
 
 \`\`\`r \# install.packages(“remotes”)
 remotes::install_github(“benjabalsola/paqueteR”)
@@ -26,29 +25,15 @@ remotes::install_github(“benjabalsola/paqueteR”)
 
 library(paqueteR)
 
-# Cargar el dataset de ejemplo incluido en el paquete
-
-data(“NH0437”)
-
-# Ver las primeras filas
-
-head(NH0437)
-
-# Calcular resumen
+data(“NH0437”) head(NH0437)
 
 tabla_resumen_temperatura(NH0437)
 
-# Graficar temperatura promedio mensual
-
 grafico_temperatura_mensual(NH0437, titulo = “Promedio mensual NH0437”)
 
-Autores
+## **Autores**
 
-Este paquete fue desarrollado por:
+**Benjamín Balsola** (autor principal)  
+**Ramiro Coletto** (coautor)
 
-Benjamín Balsola (autor principal)
-
-Ramiro Coletto (coautor)
-
-Como parte del segundo parcial de la materia Programación II,
-Licenciatura en Ciencia de Datos – Universidad Austral (2025).
+**Universidad Austral – Programación II (2025)**
