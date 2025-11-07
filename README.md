@@ -30,7 +30,9 @@ remotes::install_github("benjabalsola/paqueteR")
 
 A continuación se muestra un ejemplo de flujo de trabajo con el paquete:
 
-\`\`\`r library(paqueteR)
+``` r
+library(paqueteR)
+```
 
 ## Cargar el dataset de ejemplo incluido en el paquete
 
