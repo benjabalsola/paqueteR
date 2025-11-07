@@ -1,0 +1,17 @@
+---
+title: "Uso del paquete paqueteR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Uso del paquete paqueteR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introducción
+Este paquete permite leer y analizar datos meteorológicos de distintas estaciones.
+
+# Cargar los datos
+```{r}
+library(paqueteR)
+data("NH0437")
+head(NH0437)
