@@ -1,0 +1,40 @@
+---
+title: "Uso del paquete paqueteR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Uso del paquete paqueteR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introducción
+Este paquete permite leer y analizar datos meteorológicos de distintas estaciones.
+
+# Cargar los datos
+```{r}
+library(paqueteR)
+data("NH0437")
+head(NH0437)
+```
+
+#Resumen de temperatura
+Podemos obtener un resumen estadístico por estación (media, mínimo, máximo, etc.) con la función tabla_resumen_temperatura().
+```{r}
+tabla_resumen_temperatura(NH0437)
+```
+
+#Gráfico mensual
+También podemos visualizar la temperatura promedio mensual con grafico_temperatura_mensual().
+```{r}
+grafico_temperatura_mensual(NH0437, titulo = "Promedio mensual NH0437")
+```
+
+#Conclusión
+El paquete paqueteR permite automatizar el proceso de lectura, resumen y visualización de datos meteorológicos, simplificando el análisis exploratorio de estaciones.
+
+
+
+
+
+
+
