@@ -20,6 +20,12 @@ knitr::opts_chunk$set(eval = FALSE)
 
 # paqueteR <img src="man/figures/logo.png" align="right" width="120"/>
 
+<!-- badges: start -->
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![R-CMD-check](https://github.com/benjabalsola/paqueteR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/benjabalsola/paqueteR/actions/workflows/R-CMD-check.yaml)
+[![Codecov test coverage](https://codecov.io/gh/benjabalsola/paqueteR/graph/badge.svg)](https://app.codecov.io/gh/benjabalsola/paqueteR)
+<!-- badges: end -->
+
 **paqueteR** es un paquete desarrollado para el análisis y visualización
 de datos meteorológicos de distintas estaciones.
 
