@@ -2,4 +2,39 @@ url: https://benjabalsola.github.io/paqueteR/
 template:
   bootstrap: 5
 
+home:
+  title: paqueteR
+  description: "Funciones para leer, resumir y graficar datos meteorológicos de estaciones (dataset NH0437)."
 
+navbar:
+  structure:
+    left:  [home, reference, articles]
+    right: [github]
+  components:
+    home:
+      text: Inicio
+      href: index.html
+    reference:
+      text: Referencia
+      href: reference/index.html
+    articles:
+      text: Tutorial
+      href: articles/uso_paquete.html
+    github:
+      icon: fab fa-github
+      href: https://github.com/benjabalsola/paqueteR
+
+reference:
+  - title: "Funciones principales"
+    contents:
+      - leer_datos_estacion
+      - tabla_resumen_temperatura
+      - grafico_temperatura_mensual
+  - title: "Datos incluidos"
+    contents:
+      - NH0437
+
+footer:
+  structure:
+    left: developed_by
+    right: pkgdown
