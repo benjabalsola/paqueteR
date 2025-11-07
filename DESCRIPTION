@@ -2,7 +2,8 @@ Package: paqueteR
 Title: Analisis y graficos de datos meteorologicos de estaciones
 Version: 0.0.0.9000
 Authors@R: 
-    person("Benjamin", "Balsola", , "benjabalsola@gmail.com", role = c("aut", "cre"))
+    c(person("Benjamin", "Balsola", email = "benjabalsola@gmail.com", role = c("aut", "cre")), 
+person("Ramiro", "Coletto", email = "ramirocoletto@gmail.com", role = "aut") )
 Description: Este paquete permite descargar datos de estaciones meteorologicas 
     desde GitHub, generar tablas resumen de temperatura y graficos mensuales 
     de la temperatura promedio a 150 cm de abrigo.
